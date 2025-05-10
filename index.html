@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Links - [Your Name]</title>
+    <title>Aland Wasim</title>
     <!-- Rubik Font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -252,8 +252,7 @@
         @media (max-width: 767px) { /* Adjust this value if needed */
 
             /* Particles and Binary Background are now visible on mobile too,
-               so we don't hide them here anymore. The following commented block
-               was removed in the previous update.
+               so we don't hide them here anymore.
             /* #particles-js, #binary-background {
                 display: none;
             } */
@@ -323,41 +322,47 @@
             <!-- Use class="link-button group" for all links -->
             <!-- Content structure: <i> (icon) <span> (text) <div></div> (spacer) -->
 
-
-              <!-- LinkedIn Link -->
-            <a href="https://www.linkedin.com/in/aland-wasim-rasul-a62056261/?originalSubdomain=iq" target="_blank" class="link-button group">
+            <!-- LinkedIn Link -->
+            <!-- target="_blank" لابرا لێرە -->
+            <a href="https://www.linkedin.com/in/aland-wasim-rasul-a62056261/?originalSubdomain=iq" class="link-button group">
                  <i class="fab fa-linkedin-in group-hover:animate-bounce"></i> <span>LinkedIn</span> <div></div>
             </a>
 
             <!-- Telegram Link -->
-            <a href="https://t.me/AlandWasim" target="_blank" class="link-button group">
+             <!-- target="_blank" لابرا لێرە -->
+            <a href="https://t.me/AlandWasim" class="link-button group">
                  <i class="fab fa-telegram-plane group-hover:animate-bounce"></i> <span>Telegram</span> <div></div>
             </a>
 
             <!-- Facebook Link -->
-            <a href="https://www.facebook.com/share/1V2DUBHfWU/" target="_blank" class="link-button group">
+             <!-- target="_blank" لابرا لێرە -->
+            <a href="https://www.facebook.com/share/1V2DUBHfWU/" class="link-button group">
                 <i class="fab fa-facebook-f group-hover:animate-bounce"></i> <span>Facebook</span> <div></div>
             </a>
 
 
              <!-- Snapchat Link -->
-            <a href="https://www.snapchat.com/add/alandwasim?share_id=MUCzRele4OI&locale=en-US" target="_blank" class="link-button group">
+              <!-- target="_blank" لابرا لێرە -->
+            <a href="https://www.snapchat.com/add/alandwasim?share_id=MUCzRele4OI&locale=en-US" class="link-button group">
                  <i class="fab fa-snapchat-ghost group-hover:animate-bounce"></i> <span>Snapchat</span> <div></div>
             </a>
 
 
             <!-- DeviantArt Link -->
-            <a href="https://www.deviantart.com/aland1w" target="_blank" class="link-button group">
+             <!-- target="_blank" لابرا لێرە -->
+            <a href="https://www.deviantart.com/aland1w" class="link-button group">
                  <i class="fab fa-deviantart group-hover:animate-bounce"></i> <span>DeviantArt</span> <div></div>
             </a>
 
             <!-- Email Link -->
+            <!-- target="_blank" لابرا لێرە (بۆ mailto زۆر کاریگەر نییە بەڵام بۆ ڕێکی لابرا) -->
             <a href="mailto:alandwasim486@gmail.com" class="link-button group">
                  <i class="fas fa-envelope group-hover:animate-bounce"></i> <span>Email</span>
                  <div></div>
             </a>
 
             <!-- Phone Link -->
+            <!-- target="_blank" لابرا لێرە (بۆ tel زۆر کاریگەر نییە بەڵام بۆ ڕێکی لابرا) -->
              <a href="tel: +9647511833696" class="link-button group">
                  <i class="fas fa-phone group-hover:animate-bounce"></i> <span>Phone</span>
                  <div></div>
@@ -368,19 +373,18 @@
     </div>
 
     <script>
-        // Particle.js Configuration - Feel free to play with these values!
-        // ئێستا دەنکۆڵەی زیاتر و خێراتر دەردەکەوێت لەسەر هەموو شاشەکان
+        // Particle.js Configuration
         particlesJS('particles-js', {
             "particles": {
                 "number": {
-                    "value": 150, // ژمارەی دەنکۆڵەکان زیادکرا
+                    "value": 150,
                     "density": {
                         "enable": true,
-                        "value_area": 1000 // دەتوانیت ئەمەش کەم بکەیتەوە بۆ دانسێتێتی زیاتر
+                        "value_area": 1000
                     }
                 },
                 "color": {
-                    "value": "#ffffff" /* Keeping particle color white */
+                    "value": "#ffffff"
                 },
                 "shape": {
                     "type": "circle",
@@ -412,13 +416,13 @@
                 "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#ffffff", /* Keeping line color white */
+                    "color": "#ffffff",
                     "opacity": 0.3,
                     "width": 1
                 },
                 "move": {
                     "enable": true,
-                    "speed": 4, // خێرایی جوڵەی دەنکۆڵەکان زیادکرا
+                    "speed": 4,
                     "direction": "none",
                     "random": true,
                     "straight": false,
@@ -474,75 +478,31 @@
         });
 
         // Binary Background Effect Script
-        // خێرایی دروستبوونی ژمارە باینەرییەکان زیادکرا
         const binaryBackground = document.getElementById('binary-background');
 
         function createBinaryDigit() {
-            // Check if binaryBackground exists and is visible
              if (binaryBackground && binaryBackground.offsetWidth > 0 && binaryBackground.offsetHeight > 0 && getComputedStyle(binaryBackground).display !== 'none') {
                 const digit = document.createElement('span');
                 digit.classList.add('binary-digit');
-                digit.innerText = Math.random() > 0.5 ? '0' : '1'; // Randomly '0' or '1'
+                digit.innerText = Math.random() > 0.5 ? '0' : '1';
 
-                // Random position
-                digit.style.left = Math.random() * 100 + 'vw'; // Random horizontal position (viewport width)
-                digit.style.top = Math.random() * 100 + 'vh'; // Random vertical position (viewport height)
+                digit.style.left = Math.random() * 100 + 'vw';
+                digit.style.top = Math.random() * 100 + 'vh';
 
-                // Append to container
                 binaryBackground.appendChild(digit);
 
-                // Remove element after animation ends
                 digit.addEventListener('animationend', () => {
                     digit.remove();
                 });
             }
         }
 
-        // Periodically create new binary digits
-        setInterval(createBinaryDigit, 200); // خێرایی دروستبوونی ژمارەکان کەم کرایەوە بۆ 200ms (زیاتر)
+        setInterval(createBinaryDigit, 200);
 
-
-        // --- Theme Changing Logic ---
-        // ئەم بەشە وەک خۆی ماوە و لابراوە بۆ نەگۆڕینی ڕەنگ بە کلیک
-        /*
-        const body = document.body;
-        const themes = ['theme-green', 'theme-blue', 'theme-brown'];
-        let currentThemeIndex = 0;
-
-        // Function to apply a theme
-        function applyTheme(themeClass) {
-            themes.forEach(theme => body.classList.remove(theme));
-            body.classList.add(themeClass);
-        }
-
-        // Find the initial theme index
-         currentThemeIndex = themes.indexOf(body.classList.contains('theme-green') ? 'theme-green' :
-                                           body.classList.contains('theme-blue') ? 'theme-blue' :
-                                           body.classList.contains('theme-brown') ? 'theme-brown' : themes[0]);
-        if(currentThemeIndex === -1) currentThemeIndex = 0;
-
-
-        // Event listener to change theme on background click
-        document.addEventListener('click', function(event) {
-            const mainCard = document.getElementById('main-card');
-            if (mainCard && !mainCard.contains(event.target)) {
-                currentThemeIndex = (currentThemeIndex + 1) % themes.length;
-                applyTheme(themes[currentThemeIndex]);
-            }
-        });
-         // Prevent clicks inside the card from triggering the body click event
-        const mainCard = document.getElementById('main-card');
-        if (mainCard) {
-             mainCard.addEventListener('click', function(event) {
-                 event.stopPropagation();
-             });
-        }
-        */ // کۆتایی ئەو بەشەی کە لابرا
 
         // Entry Animation for Main Card
         document.addEventListener('DOMContentLoaded', function() {
             const mainCard = document.getElementById('main-card');
-            // دڵنیا بوونەوە لەوەی mainCard بوونی هەیە پێش بەکارهێنانی
             if(mainCard) {
                 setTimeout(() => {
                      mainCard.classList.add('is-visible');
