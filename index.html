@@ -17,31 +17,39 @@
 
     <style>
         /* Custom CSS Variables for Theming */
-        /* Default Theme (Green) - ئەمە تێمی هەمیشەیی دەبێت */
+        /* Clean & Organized Light Theme with Muted Blue Accent */
         body {
             /* General */
             font-family: 'Rubik', sans-serif;
             overflow-x: hidden; /* Prevent horizontal scroll */
             position: relative; /* Needed for z-index */
             min-height: 100vh; /* Ensure body takes full viewport height */
-            /* cursor: pointer; /* ئەمە لابرا بۆ ئەوەی کلیککردن لەسەر باکگراوند کاری نەبێت */
 
             /* CSS Variables */
-            --bg-gradient: linear-gradient(-45deg, #a7f3d0, #34d399, #10b981, #059669, #047857); /* Green gradient for large screens */
-            --mobile-bg-gradient: linear-gradient(135deg, #a7f3d0, #34d399); /* Simpler green gradient for mobile */
-            --card-bg: rgba(255, 255, 255, 0.98); /* Almost opaque white */
-            --text-color-primary: #1f2937; /* gray-800 */
-            --text-color-secondary: #374151; /* gray-700 */
-            --button-bg: #4ade80; /* green-400 */
-            --button-border: #4ade80;
-            --button-text: #ffffff; /* White text */
-            --button-hover-bg: #22c55e; /* green-500 */
-            --button-hover-border: #22c55e;
-            --pulse-border-start: rgba(16, 185, 129, 0.8); /* green-500 with alpha */
-            --pulse-border-end: rgba(5, 150, 105, 1); /* green-600 */
-            --pulse-border-start-rgb: 16, 185, 129; /* Default green-500 RGB */
-            --binary-color: rgba(255, 255, 255, 0.6); /* White with transparency */
-            --particle-color: #ffffff; /* White particles */
+            /* Light background gradients */
+            --bg-gradient: linear-gradient(-45deg, #F0F0F0, #F5F5F5, #FAFAFA, #F5F5F5, #F0F0F0); /* Subtle light gray gradient */
+            --mobile-bg-gradient: linear-gradient(135deg, #F0F0F0, #F5F5F5); /* Simpler light gray gradient for mobile */
+
+            /* Adjusted card and text colors for light background */
+            --card-bg: rgba(255, 255, 255, 0.98); /* Near opaque white for the card */
+            --text-color-primary: #333333; /* Dark gray for primary text */
+            --text-color-secondary: #555555; /* Medium gray for secondary text */
+
+            /* Adjusted button colors to use a muted blue accent */
+            --button-bg: #78909C; /* Muted Blue Grey */
+            --button-border: #78909C;
+            --button-text: #ffffff; /* White text on buttons for contrast */
+            --button-hover-bg: #607D8B; /* Slightly Darker Muted Blue Grey on hover */
+            --button-hover-border: #607D8B;
+
+            /* Adjusted pulse border colors to match the muted blue accent */
+            --pulse-border-start: rgba(120, 144, 156, 0.8); /* Muted Blue Grey with alpha (120, 144, 156 is RGB for #78909C) */
+            --pulse-border-end: rgba(96, 125, 139, 1); /* Slightly Darker Muted Blue Grey (96, 125, 139 is RGB for #607D8B) */
+            --pulse-border-start-rgb: 120, 144, 156; /* RGB for Muted Blue Grey for shadow */
+
+            /* Binary and particle colors adjusted for light background */
+            --binary-color: rgba(80, 80, 80, 0.3); /* Dark gray with transparency */
+            --particle-color: #888888; /* Medium dark gray particles */
 
             /* Add Transitions (دەکرێت ئەمە بهێڵرێتەوە ئەگەر لە داهاتوودا بتەوێت تێم زیاد بکەیت) */
             transition: color 7s ease;
@@ -293,7 +301,8 @@
 
     </style>
 </head>
-<body class="animated-gradient-bg flex items-center justify-center min-h-screen py-10 px-6 theme-green">
+<body class="animated-gradient-bg flex items-center justify-center min-h-screen py-10 px-6">
+    <!-- Removed theme-green class as we modified the default body{} block -->
     <!-- Added px-6 class here -->
 
     <!-- Particles Container -->
@@ -306,7 +315,7 @@
     <div id="main-card" class="content-card p-8 rounded-2xl shadow-2xl w-full max-w-sm md:max-w-md text-center">
 
         <!-- Profile Picture -->
-        <img src="aland.png" alt="Profile Picture" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 profile-img-border shadow-lg object-cover">
+        <img src="aland2.png" alt="Profile Picture" class="w-40 h-40 rounded-full mx-auto mb-6 border-4 profile-img-border shadow-lg object-cover">
 
         <!-- Name / Title -->
         <h1 class="name-title font-bold mb-3">Aland Wasim</h1>
@@ -341,24 +350,10 @@
             </a>
 
 
-             <!-- Snapchat Link -->
-              <!-- target="_blank" لابرا لێرە -->
-            <a href="https://www.snapchat.com/add/alandwasim?share_id=MUCzRele4OI&locale=en-US" class="link-button group">
-                 <i class="fab fa-snapchat-ghost group-hover:animate-bounce"></i> <span>Snapchat</span> <div></div>
-            </a>
-
-
             <!-- DeviantArt Link -->
              <!-- target="_blank" لابرا لێرە -->
             <a href="https://www.deviantart.com/aland1w" class="link-button group">
                  <i class="fab fa-deviantart group-hover:animate-bounce"></i> <span>DeviantArt</span> <div></div>
-            </a>
-
-            <!-- Email Link -->
-            <!-- target="_blank" لابرا لێرە (بۆ mailto زۆر کاریگەر نییە بەڵام بۆ ڕێکی لابرا) -->
-            <a href="mailto:alandwasim486@gmail.com" class="link-button group">
-                 <i class="fas fa-envelope group-hover:animate-bounce"></i> <span>Email</span>
-                 <div></div>
             </a>
 
             <!-- Phone Link -->
@@ -367,6 +362,13 @@
                  <i class="fas fa-phone group-hover:animate-bounce"></i> <span>Phone</span>
                  <div></div>
             </a>
+
+           <a href="mailto:?to=alandwasim486@gmail.com" class="link-button group">
+     <i class="fas fa-envelope group-hover:animate-bounce"></i> <span>Email</span>
+     <div></div>
+</a>
+
+            
 
         </div>
 
@@ -384,7 +386,7 @@
                     }
                 },
                 "color": {
-                    "value": "#ffffff"
+                    "value": "#888888" // Updated particle color to a medium dark gray
                 },
                 "shape": {
                     "type": "circle",
@@ -416,7 +418,7 @@
                 "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#ffffff",
+                    "color": "#888888", // Updated line color to a medium dark gray
                     "opacity": 0.3,
                     "width": 1
                 },
@@ -497,7 +499,8 @@
             }
         }
 
-        setInterval(createBinaryDigit, 200);
+        // Reduced interval slightly for more density (optional)
+        setInterval(createBinaryDigit, 150);
 
 
         // Entry Animation for Main Card
